@@ -6,6 +6,12 @@ const assertEqual = function (actual, expected) {
   }
 };
 
+const result = tail(["Hello", "Lighthouse", "Labs"]);
+function tail(arr) {
+  return arr.slice(1);
+}
+const words = ["Yo Yo", "Lighthouse", "Labs"];
+tail(words);
+assertEqual(words.length, 3);
+
 // TEST CODE
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
